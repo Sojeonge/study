@@ -1,0 +1,53 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.OptionalDouble;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        // 1. 주어진 정수 리스트에서 모든 짝수를 출력하는 람다 표현식을 작성하세요.
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+//        numbers.stream().filter(n -> n % 2 == 0).forEach(System.out::println);
+
+        // 2. 주어진 문자열 리스트에서 길이가 5 이상인 문자열만 출력하는 람다 표현식을 작성하세요.
+        List<String> strings = Arrays.asList("Apple", "Banana", "Cherry", "Date", "Elderberry");
+//        strings.stream().filter(s -> s.length() >= 5).forEach(System.out::println);
+
+        // 3. 주어진 정수 리스트에서 가장 큰 값을 찾는 람다 표현식을 작성하세요.
+//        Optional<Integer> max = numbers.stream().max(Integer::compare);
+//        max.ifPresent(System.out::println);
+
+        // 4. 주어진 정수 리스트에서 모든 숫자의 합계를 계산하는 람다 표현식을 작성하세요.
+//        int sum = numbers.stream().reduce(0, Integer::sum);
+//        System.out.println(sum);
+
+        // 5. 주어진 문자열 리스트에서 모든 문자열을 대문자로 변환하고 출력하는 람다 표현식을 작성하세요.
+//        strings.stream().map(String::toUpperCase).forEach(System.out::println);
+
+        // 6. 주어진 정수 리스트에서 모든 숫자를 제곱한 결과를 출력하는 람다 표현식을 작성하세요.
+//        numbers.stream().map(n -> n * n).forEach(System.out::println);
+
+        // 7. 주어진 문자열 리스트에서 특정 문자('a')가 포함된 문자열만 출력하는 람다 표현식을 작성하세요.
+//        strings.stream().filter(s -> s.contains("a")).forEach(System.out::println);
+
+        // 8. 주어진 정수 리스트에서 모든 숫자의 평균을 계산하는 람다 표현식을 작성하세요.
+//        OptionalDouble avg = numbers.stream()
+//                .mapToInt(Integer::intValue)
+//                .average();
+//        avg.ifPresent(System.out::println);
+        
+        // 9. 주어진 문자열 리스트에서 각 문자열의 길이를 출력하는 람다 표현식을 작성하세요.
+//        List<Integer> len = strings.stream()
+//                .map(s -> s.length()).collect(Collectors.toList());
+//        System.out.println(len);
+
+//        strings.stream().map(String::length).forEach(System.out::println);
+
+        // 10. 주어진 정수 리스트에서 모든 숫자를 곱한 결과를 출력하는 람다 표현식을 작성하세요.
+//        int result = numbers.stream().reduce(1, (a, b) -> a * b);
+//
+//        System.out.println(result);
+
+    }
+}
