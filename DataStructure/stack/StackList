@@ -1,0 +1,44 @@
+import java.util.*;
+
+class MyStack {
+    // 여기에 코드를 작성하세요.
+    List<String> stackList = new ArrayList<>();
+
+    public void push(String string) {
+        stackList.add(string);
+    }
+
+    public String pop() {
+        if(stackList.isEmpty()) {
+            return "-1";
+        } else {
+        return stackList.removeLast();
+    }
+        }
+
+    public int size() {
+        return stackList.size();
+    }
+
+    public boolean isEmpty() {
+        if (stackList.isEmpty()) {
+            return true;
+        }
+        return false;
+    }
+}
+
+public class StackList {
+    public static void main(String args[]) {
+        // 채점을 위한 코드이므로 수정하지 말아주세요.
+        MyStack myStack = new MyStack();
+        if (myStack.isEmpty())   System.out.println("스택이 비어있습니다.");
+        myStack.push("3");
+        myStack.push("5");
+        System.out.println(myStack.size());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+    }
+
+}
