@@ -1,0 +1,44 @@
+import java.util.HashSet;
+import java.util.Set;
+// ItemManager 클래스를 작성합니다.
+class ItemManager {
+    private Set<String> itemIds;
+
+    public ItemManager() {
+        this.itemIds = new HashSet<>();
+    }
+
+    public void addItem(String itemId) {
+        itemIds.add(itemId);
+    }
+    public boolean removeItem(String itemId) {
+        if(itemIds.remove(itemId)) {
+            return true;
+        }
+        return false;
+    }
+
+    void showItems() {
+        System.out.println(itemIds.toString());
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ItemManager manager = new ItemManager();
+
+        // 아이템 ID 추가
+        manager.addItem("sword1001");
+        manager.addItem("shield2001");
+        manager.addItem("potion3001");
+        // 동일한 ID를 가진 아이템 추가
+        manager.addItem("potion3001");
+
+        // 전체 아이템 ID 조회
+        manager.showItems();
+
+        // 아이템 ID 제거
+        manager.removeItem("potion3001");
+        manager.showItems();
+    }
+}
