@@ -1,0 +1,33 @@
+<Annotation>
+
+< GET>
+1. @RequestMapping(value=“”,method=“”)
+: Value(URL), Method(HTTP Method)로 정의하여 API를 개발
+
+2. @GetMapping(“/helllo”)
+: GET API 호출하는 경우 사용
+
+3. @PathVariable
+: GET요청은 파라미터를 전달하기 위해 URL에 값을 담아 요청
+: URL에서 담긴 값과 변수를 매핑하기 위해 사용
+
+4. @RequestParam
+: GET 요청에서 쿼리 문자열을 전달하기 위해 사용
+: URL에서 ? 우측으로 key=value의 형태로 표현하고 복수의 경우 &로 연결
+ex) localhost:8080/hello?name=elice&animal=rabbit
+-> … (@RequestParam Map<String, String> params)
+
+5. DTO
+: GET 요청에서 쿼리 문자열을 매핑할 때 key=value가 정해져있지만 파라미터가 많은 경우 DTO 객체 사용
+ex) localhost:8080/hello?name=elice&animal=rabbit&age=1
+-> public String helloRequestParam(HelloDTO helloDTO) 
+	{ return helloDTO.toString(); }
+
+Public class HelloDto {
+… }
+
+6. @PostMapping
+: Post API 호출하는 경우
+7. @RequestBody
+8. @PutMapping
+9. @DeleteMapping
