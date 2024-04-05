@@ -1,4 +1,4 @@
-<Annotation>
+Annotation
 
 < GET>
 1. @RequestMapping(value=“”,method=“”)
