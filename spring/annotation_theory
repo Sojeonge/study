@@ -1,6 +1,5 @@
 Annotation
 
-< GET>
 1. @RequestMapping(value=“”,method=“”)
 : Value(URL), Method(HTTP Method)로 정의하여 API를 개발
 
