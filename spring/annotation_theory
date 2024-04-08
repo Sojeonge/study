@@ -1,4 +1,4 @@
-Annotation
+ * Annotation *
 
 1. @RequestMapping(value=“”,method=“”)
 : Value(URL), Method(HTTP Method)로 정의하여 API를 개발
@@ -23,7 +23,7 @@ ex) localhost:8080/hello?name=elice&animal=rabbit&age=1
 	{ return helloDTO.toString(); }
 
 Public class HelloDto {
-… }
+	… }
 
 6. @PostMapping
 : Post API 호출하는 경우
