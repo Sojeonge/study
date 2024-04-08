@@ -20,6 +20,6 @@ Respository
 : DAO의 역할
 
 (Spring 서비스에서의 사용)
-Client <- DTO -> Controller <-  DTO -> Service <- Entity -> DAO <- Entity -> DB
+Client <- (DTO) -> Controller <-  (DTO) -> Service <- (Entity) -> DAO <- (Entity) -> DB
 
 
