@@ -29,4 +29,4 @@ Public class HelloDto {
 : Post API 호출하는 경우
 7. @RequestBody
 8. @PutMapping
-9. @DeleteMapping
+9. @DeleteMapping : 삭제
