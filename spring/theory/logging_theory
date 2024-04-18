@@ -1,3 +1,5 @@
 * LogBack 로깅 레벨
 
 TRACE < DEBUG < INFO < WARN < ERROR
+
+ex ) DEBUG : info, warn, error를 포함
